@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> caac939 (Add React application)
 # Praxis — Mock Test Portal
 
 A React app for student mock tests with role-based dashboards for **students** and **mentors**.
@@ -64,6 +67,7 @@ All test results and the logged-in session persist in the browser's `localStorag
 - Add more tests/questions: edit the `TESTS` array in `sampleData.js`.
 - Add more students/mentors: edit `USERS` and set `mentorId` (student → mentor) or `studentIds` (mentor → students).
 - Real backend: replace the bodies of `login()` in `AuthContext.jsx` and the functions in `results.js` with API calls — the rest of the app is already written against those interfaces.
+<<<<<<< HEAD
 =======
 # StudyEcart Mock Test Backend
 
@@ -167,3 +171,5 @@ This starter backend uses plain-text passwords because the requested development
 
 The backend calculates the score using the correct answer stored in MySQL. The React test API receives question text and options, but not the correct answer.
 >>>>>>> d5ab79b3b12c3076baaecc03b93ff8fa68a70bdb
+=======
+>>>>>>> caac939 (Add React application)
