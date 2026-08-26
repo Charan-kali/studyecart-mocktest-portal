@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+  }
+  ::selection {
+    @apply bg-amber/40;
+  }
+  *:focus-visible {
+    outline: 2px solid #132347;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .paper-texture {
+    background-image: radial-gradient(circle, #0f3d2a12 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+  .perforated-r {
+    position: relative;
+  }
+  .perforated-r::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    width: 0;
+    border-right: 2px dashed #0f3d2a;
+    opacity: 0.15;
+  }
+  .stamp-rotate {
+    transform: rotate(-6deg);
+  }
+  .brand-gradient {
+    background: linear-gradient(135deg, #146b3d 0%, #1e9e5a 55%, #2bb56a 100%);
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #A9B5D2;
+    border-radius: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
